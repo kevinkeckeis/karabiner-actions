@@ -1,0 +1,49 @@
+{
+    "description": "R_U = Hyper - 220ms",
+    "manipulators": [
+        {
+            "from": { "key_code": "r" },
+            "parameters": {
+                "basic.to_if_alone_timeout_milliseconds": 200,
+                "basic.to_if_held_down_threshold_milliseconds": 220
+            },
+            "to_delayed_action": { "to_if_canceled": [{ "key_code": "r" }] },
+            "to_if_alone": [
+                {
+                    "halt": true,
+                    "key_code": "r"
+                }
+            ],
+            "to_if_held_down": [
+                {
+                    "halt": true,
+                    "key_code": "left_shift",
+                    "modifiers": ["left_control", "left_option", "left_command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": { "key_code": "u" },
+            "parameters": {
+                "basic.to_if_alone_timeout_milliseconds": 200,
+                "basic.to_if_held_down_threshold_milliseconds": 220
+            },
+            "to_delayed_action": { "to_if_canceled": [{ "key_code": "u" }] },
+            "to_if_alone": [
+                {
+                    "halt": true,
+                    "key_code": "u"
+                }
+            ],
+            "to_if_held_down": [
+                {
+                    "halt": true,
+                    "key_code": "left_shift",
+                    "modifiers": ["left_control", "left_option", "left_command"]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
